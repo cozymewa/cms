@@ -6,7 +6,7 @@ $password = $_REQUEST['password'];
 $db = new mysqli("localhost", "root", "", "auth");
 $q = "SELECT * FROM user WHERE email = '$email'";
 echo $q;
-//$db->query($q);
+$db->query($q);
 
 //$d = mysqli_connect("localhost", "root", "", "auth") 
 //mysqli_query($d, "SELECT * FROM user");
